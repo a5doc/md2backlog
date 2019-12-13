@@ -1,0 +1,28 @@
+{
+  "name": "md2backlog",
+  "license": "MIT",
+  "version": "0.0.1",
+  "main": "./index.js",
+  "bin": "./lib/cli.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:a5doc/md2backlog.git"
+  },
+  "scripts": {
+    "md2backlog": "node ./lib/cli.js",
+    "backlog2md": "node ./lib/cli.js --reverse",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "backlog-js": "^0.9.1",
+    "dotenv": "^7.0.0",
+    "es6-promise": "^4.2.8",
+    "front-matter": "^3.0.1",
+    "isomorphic-fetch": "^2.2.1",
+    "isomorphic-form-data": "^2.0.0",
+    "js-yaml": "^3.13.1",
+    "marked": "^0.6.2",
+    "minimist": "^1.2.0",
+    "prettier": "^1.19.1"
+  }
+}
