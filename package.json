@@ -22,8 +22,13 @@
     "isomorphic-form-data": "^2.0.0",
     "js-yaml": "^3.13.1",
     "marked": "^0.6.2",
+    "mdast-util-definitions": "^2.0.0",
     "minimist": "^1.2.0",
     "moment": "^2.24.0",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "remark-math": "^2.0.0",
+    "remark-parse": "^7.0.2",
+    "remark-stringify": "^7.0.4",
+    "unified": "^8.4.2"
   }
 }
