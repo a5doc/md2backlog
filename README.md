@@ -3,6 +3,8 @@ md2backlog
 
 マークダウンの文書を、 [backlog](https://backlog.com/ja/) の wiki あるいは issue と同期するためのツールです。
 
+※このバージョンは、まだ issue にしか対応していません。もうすぐ wiki にも対応します。
+
 ## 1. 準備（初回だけ）
 
 ### 1.1. npm の準備
