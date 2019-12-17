@@ -31,6 +31,8 @@ backlog_access_token=yourAccessToken
 backlog_project_key=yourProjectKey
 backlog_post_type=issue
 backlog_md_dir=docs
+backlog_priority_id=
+backlog_issue_type_id=
 ```
 
 * **backlog_api_key**
@@ -48,5 +50,9 @@ backlog_md_dir=docs
     wiki / issue のどちらかで指定してください。
 * **backlog_md_dir**
     ローカル側のマークダウン文書の保存先ディレクトリを指定してください。
-
-    
+* **backlog_priority_id**
+    issueを投稿するときの priority_id 。
+    指定がないときには、"中" で投稿します。
+* **backlog_issue_type_id**
+    issueを投稿するときの issue_type_id 。
+    指定がないときには、"タスク" で投稿します。
