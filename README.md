@@ -33,6 +33,7 @@ backlog_access_token=yourAccessToken
 backlog_project_key=yourProjectKey
 backlog_post_type=issue
 backlog_md_dir=docs
+backlog_attachment_dir=docs/attachments
 backlog_priority_id=
 backlog_issue_type_id=
 ```
@@ -52,13 +53,14 @@ backlog_issue_type_id=
     wiki / issue のどちらかで指定してください。
 * **backlog_md_dir**
     ローカル側のマークダウン文書の保存先ディレクトリを指定してください。
+* **backlog_attachment_dir**
+    ローカル側の画像などの添付ファイルの保存先ディレクトリを指定してください。
 * **backlog_priority_id**
     issueを投稿するときの priority_id 。
     指定がないときには、"中" で投稿します。
 * **backlog_issue_type_id**
     issueを投稿するときの issue_type_id 。
     指定がないときには、"タスク" で投稿します。
-
 
 ## 2. backlogからダウンロードする
 
@@ -99,11 +101,22 @@ updated: '2019-12-17T10:47:05Z'
 
 ## 3. backlogにアップする
 
+backlog にアップする md が新規の記事の場合でも front-matter を記載します。  
+ただし、 backlog で採番される docId などをあらかじめ記述することはできないので、 `title` だけを記入してください。
+
+初稿の例）
 ```
-npx md2backlog docs/はじめての課題登録.md
+---
+title: はじめての課題登録
+---
+
+ほげほげ・・・
 ```
 
 アップロードは、1つずつファイルを指定します。  
 アップと同時に、ダウンロードも実行して、 front-matter に同期情報を記録します。  
 ファイル名を変えても、 front-matter の内容で追従します。
 
+```
+npx md2backlog docs/はじめての課題登録.md
+```
