@@ -64,6 +64,14 @@ backlog_issue_type_id=
 
 ## 2. backlogからダウンロードする
 
+1件の記事をダウンロードする場合
+
+```
+npx md2backlog -r https://example.backlog.com/view/MD2BACKLOG-1
+```
+
+全件の記事をダウンロードする場合
+
 ```
 npx md2backlog -r
 ```
@@ -71,7 +79,7 @@ npx md2backlog -r
 .env に設定した backlog_md_dir のディレクトリに、 backlog の記事をダウンロードします。  
 ダウンロードした記事は、 front-matter に同期のための情報を記録して、保存されます。
 
-記事の例
+ダウンロードされた記事の例
 
 ```
 ---
