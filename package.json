@@ -26,7 +26,7 @@
     "marked": "^0.6.2",
     "mdast-util-definitions": "^2.0.0",
     "minimist": "^1.2.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "prettier": "^1.19.1",
     "remark-math": "^2.0.0",
     "remark-parse": "^7.0.2",
